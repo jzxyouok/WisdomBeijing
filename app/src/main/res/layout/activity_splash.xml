@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/splash_bg_newyear"
+    android:background="@mipmap/welcome"
     tools:context=".Activitys.SplashActivity">
 
     <ImageView
         android:id="@+id/iv_head"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/splash_horse_newyear"
+        android:background="@mipmap/log"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
