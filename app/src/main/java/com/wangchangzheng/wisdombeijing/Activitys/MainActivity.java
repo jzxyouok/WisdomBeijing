@@ -1,7 +1,9 @@
-package com.wangchangzheng.wisdombeijing;
+package com.wangchangzheng.wisdombeijing.Activitys;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.wangchangzheng.wisdombeijing.R;
 
 public class MainActivity extends Activity {
 

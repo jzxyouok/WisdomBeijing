@@ -1,6 +1,7 @@
-package com.wangchangzheng.wisdombeijing;
+package com.wangchangzheng.wisdombeijing.Activitys;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
@@ -8,6 +9,9 @@ import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.view.animation.ScaleAnimation;
 import android.widget.ImageView;
+
+import com.wangchangzheng.wisdombeijing.R;
+import com.wangchangzheng.wisdombeijing.utils.SharePreferenceUtils;
 
 public class SplashActivity extends Activity {
     private ImageView head;
@@ -48,5 +52,31 @@ public class SplashActivity extends Activity {
         set.addAnimation(animAlpha);
         //开启动画
         head.startAnimation(set);
+
+        set.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                //当动画巡展结束的时候，做出判断
+                boolean isFirstEnter= SharePreferenceUtils.getBoolean(SplashActivity.this,"is_first_enter",true);
+                Intent intent;
+                if (isFirstEnter){
+                    intent=new Intent(getApplicationContext(),GuideActivity.class);
+                }else {
+                    intent=new Intent(getApplicationContext(),MainActivity.class);
+                }
+                startActivity(intent);
+                finish();
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
     }
 }
