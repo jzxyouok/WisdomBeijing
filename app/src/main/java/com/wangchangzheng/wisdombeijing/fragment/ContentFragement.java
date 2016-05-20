@@ -74,10 +74,10 @@ public class ContentFragement extends BaseFragment {
                 BasePager pager=mPagers.get(position);
                 pager.initData();
 
-                if (position==0 || position==mPagers.size()-1){
-                    setSlidingMenuEnable(false);
-                }else {
+                if (position==1){
                     setSlidingMenuEnable(true);
+                }else {
+                    setSlidingMenuEnable(false);
                 }
             }
 

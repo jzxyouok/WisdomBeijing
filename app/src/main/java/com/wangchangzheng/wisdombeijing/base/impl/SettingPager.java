@@ -27,6 +27,6 @@ public class SettingPager extends BasePager {
 
         tvTitle.setText("设置");
 
-        btnMenu.setVisibility(View.INVISIBLE);
+        btnMenu.setVisibility(View.GONE);
     }
 }

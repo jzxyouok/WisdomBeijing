@@ -22,7 +22,7 @@ import java.util.ArrayList;
  */
 public class LeftMenuFragment extends BaseFragment {
     @ViewInject(R.id.lv_list)
-    ListView lvList;
+    private ListView lvList;
 
     private ArrayList<NewsMenu.NewsMenuData> mNewsMenuData;//侧边栏网络数据对象
 
@@ -39,7 +39,7 @@ public class LeftMenuFragment extends BaseFragment {
     public View initView() {
         View view=View.inflate(mActivity,R.layout.fragment_left_menu,null);
         ViewUtils.inject(this,view);
-        return null;
+        return view;
     }
 
     public void setMenuData(ArrayList<NewsMenu.NewsMenuData> data){

@@ -27,6 +27,6 @@ public class GovAffairsPager extends BasePager {
 
         tvTitle.setText("人口管理");
 
-        btnMenu.setVisibility(View.VISIBLE);
+        btnMenu.setVisibility(View.GONE);
     }
 }

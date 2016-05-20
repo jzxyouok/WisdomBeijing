@@ -27,6 +27,6 @@ public class SmartServicePager extends BasePager {
 
         tvTitle.setText("生活");
 
-        btnMenu.setVisibility(View.VISIBLE);
+        btnMenu.setVisibility(View.GONE);
     }
 }

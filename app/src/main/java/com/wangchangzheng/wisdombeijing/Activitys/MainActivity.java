@@ -38,7 +38,7 @@ public class MainActivity extends SlidingFragmentActivity{
     //获取侧边栏fragment对象
     public LeftMenuFragment getLeftMenuFragement(){
         FragmentManager fm=getSupportFragmentManager();
-        LeftMenuFragment fragement= (LeftMenuFragment) fm.findFragmentByTag(TAG_CONTENT);
+        LeftMenuFragment fragement= (LeftMenuFragment) fm.findFragmentByTag(TAG_LEFT_MENU);
         return fragement;
     }
 

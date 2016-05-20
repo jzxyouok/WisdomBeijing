@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.wangchangzheng.wisdombeijing"
@@ -26,6 +27,6 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.android.volley:volley:1.0.0'
     compile project(':slidingmenulibrary')
-
+    compile 'com.google.code.gson:gson:2.2.4'
 
 }
